@@ -84,7 +84,7 @@ public class TextController : MonoBehaviour {
 
 	private void state_sheet1(){
 		text.text = "The sheet is still dirty, it probably needs a wash. " +
-			"You dont want to sleep on the bed with dirty sheet. \n\n" +
+			"You don't want to sleep on the bed with dirty sheet. \n\n" +
 				"Press R to return to Cell";
 		if (Input.GetKeyDown (KeyCode.R)) {
 			myState = States.cell_mirror;
@@ -93,7 +93,7 @@ public class TextController : MonoBehaviour {
 	
 	private void state_lock1(){
 		text.text = "This lock can be cleary viewed using the mirror. " +
-			"Slide the throught the bars and view the lock to pick it \n\n" +
+			"Slide the mirror throught the bars and view the lock to pick it \n\n" +
 			"Press O to open R to return to Cell";
 		if (Input.GetKeyDown (KeyCode.R)) {
 			myState = States.cell_mirror;
