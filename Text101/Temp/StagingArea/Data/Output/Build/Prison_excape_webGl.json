@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "Prison_excape_webGl.data.unityweb",
+"asmCodeUrl": "Prison_excape_webGl.asm.code.unityweb",
+"asmMemoryUrl": "Prison_excape_webGl.asm.memory.unityweb",
+"asmFrameworkUrl": "Prison_excape_webGl.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}
