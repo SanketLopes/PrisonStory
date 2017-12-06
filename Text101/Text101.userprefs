@@ -1,9 +1,8 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TextController.cs">
     <Files>
-      <File FileName="Assets/TextController.cs" Line="29" Column="45" />
-      <File FileName="../NumberWizard/Assets/Script/NumberWizard.cs" Line="42" Column="18" />
+      <File FileName="Assets/TextController.cs" Line="22" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
