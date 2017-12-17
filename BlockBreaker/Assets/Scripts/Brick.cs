@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LoseCollider : MonoBehaviour {
+public class Brick : MonoBehaviour {
+
+	public int maxHits =1;
+	private int timesHit = 0;
 
 	private LevelManager levelManager;
 
@@ -10,13 +13,24 @@ public class LoseCollider : MonoBehaviour {
 	void Start () {
 		levelManager = GameObject.FindObjectOfType<LevelManager> ();
 	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
 
 	public void OnCollisionEnter2D(Collision2D collision2d){
-		Debug.Log ("Collision");
+		Debug.Log ("Collision : " + ++timesHit);
+		SimulateWin ();
 	}
 
 	void OnTriggerEnter2D(Collider2D collider2d){
 		Debug.Log ("Trigger");
-		levelManager.LoadLevel ("Lose");
+	}
+
+	void SimulateWin(){
+		levelManager.LoadNextLevel ();
 	}
 }
+	

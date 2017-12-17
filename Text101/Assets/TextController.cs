@@ -40,8 +40,8 @@ public class TextController : MonoBehaviour {
 	private void state_cell(){
 			text.text = "You are in a prison cell which is locked from out side. " +
 				"There are few things in the cell that can be used to escape the cell. " +
-				"The goal is to get out of the cell by using things that are available" +
-				"There is Bed, Sink, Mirror \n\n" +
+				"The goal is to get out of the cell by using things that are available. " +
+				"There is Sheet, Lock, Mirror \n\n" +
 				"Press S to view Sheet, M to view Mirror, L to view Lock";
 		if (Input.GetKeyDown (KeyCode.S)) {
 			myState = States.sheet_0;

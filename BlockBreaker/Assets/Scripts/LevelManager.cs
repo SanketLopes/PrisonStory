@@ -12,8 +12,10 @@ public class LevelManager : MonoBehaviour {
 		} else if (level.Equals ("Start")) {
 			SceneManager.LoadScene (0);
 		} else if (level.Equals ("Won")) {
-			SceneManager.LoadScene (2);
+			SceneManager.LoadScene (3);
 		} else if (level.Equals ("Lose")) {
+			SceneManager.LoadScene (4);
+		} else if (level.Equals ("Level_02")) {
 			SceneManager.LoadScene (3);
 		} 
 
@@ -22,6 +24,10 @@ public class LevelManager : MonoBehaviour {
 	public void QuitRequest(){
 		Debug.Log ("Quit Requested");
 		Application.Quit ();
+	}
+
+	public void LoadNextLevel(){
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
 	}
 }
  
